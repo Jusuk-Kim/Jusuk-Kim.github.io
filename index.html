@@ -1,19 +1,178 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Juseok Kim</title>
-</head>
-<body>
-  <h1>Juseok Kim</h1>
-  <p>Welcome to my research homepage.</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Volumetric Streaming</li>
-    <li>Real-time Networking</li>
-    <li>3D Reconstruction</li>
-  </ul>
-</body>
+    <title>Edward Jusuk Kim | SNU ECE</title>
+    <meta
+      name="description"
+      content="Edward Jusuk Kim is an M.S. student in Electrical and Computer Engineering at Seoul National University."
+    />
+    <meta name="theme-color" content="#111827" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Cpath d='M18 17h30v8H27v8h17v8H27v8h21v8H18z' fill='%23ffffff'/%3E%3Cpath d='M48 17h4v40h-4z' fill='%232d5bff'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Edward Jusuk Kim, home">
+          <span class="wordmark-mark" aria-hidden="true">EJK</span>
+          <span class="wordmark-name">Edward Jusuk Kim</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Seoul National University · ECE</p>
+          <h1 id="hero-title">
+            Edward<br />
+            <span>Jusuk Kim</span>
+          </h1>
+          <p class="hero-summary">
+            M.S. student in Electrical and Computer Engineering at Seoul
+            National University.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">View research</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/Jusuk-Kim"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="affiliation-card" aria-label="Current affiliation">
+          <p class="card-label">Currently</p>
+          <p class="card-role">M.S. Student</p>
+          <p class="card-organization">
+            Electrical and Computer Engineering<br />
+            Seoul National University
+          </p>
+          <div class="card-location">
+            <span aria-hidden="true"></span>
+            Seoul, Republic of Korea
+          </div>
+        </aside>
+      </section>
+
+      <section class="section section-split" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">01</p>
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="section-content about-copy">
+          <p class="lead">
+            I am an M.S. student in Electrical and Computer Engineering at
+            Seoul National University.
+          </p>
+          <p>
+            My research interests lie at the intersection of volumetric media,
+            real-time networked systems, and 3D reconstruction and rendering.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="section-number" aria-hidden="true">02</p>
+            <h2 id="research-title">Research interests</h2>
+          </div>
+          <p class="section-note">Systems for responsive, high-quality spatial media.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <p class="research-index" aria-hidden="true">A</p>
+            <h3>Volumetric Streaming</h3>
+            <p>
+              Efficient delivery and processing of dynamic 3D content under
+              changing network conditions.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <p class="research-index" aria-hidden="true">B</p>
+            <h3>Real-Time Networked Systems</h3>
+            <p>
+              System designs that support responsive, low-latency interactive
+              applications.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <p class="research-index" aria-hidden="true">C</p>
+            <h3>3D Reconstruction &amp; Rendering</h3>
+            <p>
+              Methods for reconstructing and rendering 3D scenes from
+              multi-view sensor data.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section section-split education-section"
+        id="education"
+        aria-labelledby="education-title"
+      >
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">03</p>
+          <h2 id="education-title">Education</h2>
+        </div>
+        <div class="section-content">
+          <article class="education-entry">
+            <div>
+              <h3>Seoul National University</h3>
+              <p>M.S. Student, Electrical and Computer Engineering</p>
+            </div>
+            <p class="education-status">Present</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="section-number contact-number" aria-hidden="true">04</p>
+        <div>
+          <h2 id="contact-title">Let’s connect.</h2>
+          <p>You can find my code and current projects on GitHub.</p>
+        </div>
+        <a
+          class="contact-link"
+          href="https://github.com/Jusuk-Kim"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github.com/Jusuk-Kim <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Edward Jusuk Kim</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
 </html>
