@@ -156,9 +156,9 @@ a:focus-visible {
   min-height: calc(100vh - 5rem);
   padding-block: clamp(5rem, 10vw, 9rem);
   display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(17rem, 0.65fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.72fr);
   align-items: end;
-  gap: clamp(3rem, 8vw, 8rem);
+  gap: clamp(3rem, 7vw, 7rem);
 }
 
 .eyebrow,
@@ -177,10 +177,10 @@ a:focus-visible {
 .hero h1 {
   max-width: 10ch;
   margin: 0;
-  font-size: clamp(4.1rem, 9.5vw, 8.6rem);
+  font-size: clamp(3.7rem, 7.4vw, 6.9rem);
   font-weight: 820;
-  letter-spacing: -0.075em;
-  line-height: 0.82;
+  letter-spacing: -0.065em;
+  line-height: 0.88;
 }
 
 .hero h1 span {
@@ -188,7 +188,7 @@ a:focus-visible {
 }
 
 .hero-summary {
-  max-width: 36rem;
+  max-width: 41rem;
   margin: 2.3rem 0 0;
   color: #343d4d;
   font-size: clamp(1.15rem, 2vw, 1.45rem);
@@ -238,6 +238,44 @@ a:focus-visible {
   background: white;
 }
 
+.hero-aside {
+  display: grid;
+  gap: 1rem;
+}
+
+.portrait-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(145deg, rgba(45, 91, 255, 0.96), rgba(17, 24, 39, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.portrait-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 820;
+  letter-spacing: -0.07em;
+}
+
+.portrait-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
 .affiliation-card {
   position: relative;
   margin: 0;
@@ -267,9 +305,21 @@ a:focus-visible {
 }
 
 .card-organization {
-  margin: 0.65rem 0 2.5rem;
+  margin: 0.65rem 0 1.2rem;
   color: var(--muted);
   line-height: 1.55;
+}
+
+.card-lab {
+  margin: 0 0 2.3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.card-lab a {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .card-location {
@@ -392,13 +442,25 @@ a:focus-visible {
   padding-bottom: clamp(7rem, 12vw, 11rem);
 }
 
+.education-list {
+  display: grid;
+}
+
 .education-entry {
-  padding: 0 0 1.75rem;
+  padding: 1.8rem 0;
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 2rem;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.education-entry:first-child {
+  padding-top: 0;
+}
+
+.education-entry:last-child {
+  border-bottom-color: var(--ink);
 }
 
 .education-entry h3 {
@@ -409,6 +471,21 @@ a:focus-visible {
 
 .education-entry p {
   margin: 0.4rem 0 0;
+}
+
+.education-entry .education-level {
+  margin: 0 0 0.45rem;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.education-entry .education-detail {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .education-status {
@@ -484,7 +561,12 @@ a:focus-visible {
   }
 
   .affiliation-card {
-    max-width: 30rem;
+    max-width: none;
+  }
+
+  .hero-aside {
+    max-width: 46rem;
+    grid-template-columns: minmax(13rem, 0.8fr) minmax(18rem, 1.2fr);
   }
 
   .research-grid {
@@ -541,7 +623,16 @@ a:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(3.45rem, 18vw, 5.8rem);
+    font-size: clamp(3.15rem, 14.5vw, 4.8rem);
+  }
+
+  .hero-aside {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-frame {
+    max-width: 22rem;
+    aspect-ratio: 4 / 5;
   }
 
   .section-split {
