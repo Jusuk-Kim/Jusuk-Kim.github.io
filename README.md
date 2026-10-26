@@ -1,79 +1,43 @@
-# Edward Jusuk Kim — Personal Website
+# Edward Jusuk Kim — GitHub Pages website update
 
-GitHub Pages에 바로 올릴 수 있는 정적 개인 연구자 홈페이지입니다. Jekyll이나 별도 서버 없이 `HTML + CSS`만 사용합니다.
+CV를 바탕으로 기존 HTML을 확장한 정적 웹사이트입니다. 별도의 빌드나 JavaScript 설치가 필요 없습니다.
 
-## 파일 구성
+## 적용 방법
 
-```text
-jusuk-kim.github.io/
-├── index.html
-├── README.md
-├── .nojekyll
-└── assets/
-    └── css/
-        └── style.css
+1. 기존 저장소의 `index.html`을 이 폴더의 `index.html`로 교체합니다.
+2. 기존 `assets/css/style.css`를 같은 경로의 파일로 교체합니다. HTML과 CSS를 함께 적용하세요.
+3. 기존 GitHub Pages 배포 방식으로 커밋·배포합니다. 기존 저장소의 다른 파일이나 배포 설정은 삭제하지 않습니다.
+
+배포 전에 `index.html`을 브라우저에서 열어 바로 확인할 수 있습니다. `assets` 폴더를 같은 위치에 두세요. README는 적용 안내이므로 사이트에 올리지 않아도 됩니다.
+
+이 파일은 GitHub 저장소에 직접 반영되거나 배포된 상태가 아닙니다.
+
+## 반영 내용
+
+- NXC Lab 소속, 지도교수, 연구 관심사와 연구 경험
+- CUDA VAE 최적화 및 Warmer-Go-Round 프로젝트
+- 학부·석사 학력, 과목 목록, TA 및 튜터 경험
+- Dean's List, 장학금, 대회·논문 수상
+- 이메일과 GitHub 연락처
+- 기존 남색·파란색을 바탕으로 격자 배경과 큰 여백을 줄인 디자인
+- 모바일 레이아웃, 키보드 포커스, 본문 바로가기, 모션 감소 설정
+
+공개 연구 소개는 일반적인 연구 주제와 수행 내용으로 작성했습니다. 제출 논문의 제목, 시스템명, 투고 학회 및 심사 상태는 포함하지 않았습니다.
+
+## 확인할 정보
+
+- 실제 개인 사이트 주소는 확인하지 못했습니다. 페이지는 상대 경로를 사용하므로 GitHub Pages의 사용자 사이트와 프로젝트 사이트에서 모두 사용할 수 있습니다.
+- 학부 학위 날짜와 장학금 명칭은 제공한 CV를 따랐습니다. 학위 수여일이 2024년 12월과 다르다면 Education에서 변경하세요.
+- GitHub 프로필 링크는 사용자가 제공한 `https://github.com/Jusuk-Kim`을 사용합니다.
+- HTML 구조, 페이지 내 링크 및 로컬 파일 경로를 검사했습니다. 이 환경에서는 브라우저의 실제 화면과 외부 링크 연결 여부를 확인하지 못했습니다.
+- 다운로드할 CV 파일은 포함하지 않았습니다. 공개할 PDF를 준비한 후 별도로 링크를 추가할 수 있습니다.
+
+## CV에 개인 사이트 링크 추가
+
+개인 사이트 링크는 CV 헤더의 이메일 옆에 넣는 것을 권장합니다. 실제 주소로 바꿔 사용하세요.
+
+```latex
+\mbox{\hrefWithoutArrow{https://YOUR-SITE-URL/}{Website}}%
 ```
 
-- `index.html`: 홈페이지 내용과 섹션 구조
-- `assets/css/style.css`: 색상, 글꼴, 배치, 모바일 디자인
-- `.nojekyll`: GitHub Pages가 Jekyll 처리 없이 정적 파일을 그대로 배포하게 함
-- `README.md`: 관리 및 업로드 안내
-
-## GitHub 웹에서 업로드하기
-
-1. 이 압축 파일을 컴퓨터에서 풉니다.
-2. GitHub에서 `Jusuk-Kim/jusuk-kim.github.io` 저장소로 이동합니다.
-3. **Add file → Upload files**를 선택합니다.
-4. 압축을 푼 폴더 **안쪽의 모든 파일과 `assets` 폴더**를 업로드합니다. 저장소 첫 화면에 `index.html`이 직접 보여야 합니다.
-5. 기존 `index.html`이 있다면 새 파일로 교체하고 **Commit changes**를 누릅니다.
-6. **Settings → Pages → Build and deployment**에서 다음과 같이 설정합니다.
-
-   ```text
-   Source: Deploy from a branch
-   Branch: main
-   Folder: /(root)
-   ```
-
-7. 저장 후 몇 분 뒤 `https://jusuk-kim.github.io`에 접속합니다.
-
-> `.nojekyll` 파일이 업로드 화면에서 보이지 않아도 이 사이트는 동작합니다. 해당 파일은 Jekyll 처리를 명시적으로 끄기 위한 보조 파일입니다.
-
-## Git 명령으로 업로드하기
-
-이미 Git을 사용하고 있다면 저장소를 복제한 뒤 이 파일들을 복사하고 다음 명령을 실행합니다.
-
-```bash
-git add .
-git commit -m "Add personal academic website"
-git push origin main
-```
-
-## 내용을 수정하는 위치
-
-`index.html`에서 다음 문구를 검색해 수정하면 됩니다.
-
-- 이름: `Edward Jusuk Kim`
-- 자기소개: `My research interests lie...`
-- 연구 분야: `Volumetric Streaming`, `Real-Time Networked Systems`, `3D Reconstruction & Rendering`
-- 학력: `Seoul National University`
-- GitHub 주소: `https://github.com/Jusuk-Kim`
-
-디자인은 `assets/css/style.css`의 맨 위 `:root`에 있는 색상 값을 바꾸면 됩니다.
-
-```css
-:root {
-  --paper: #f5f7fb;
-  --ink: #111827;
-  --accent: #2d5bff;
-}
-```
-
-## 나중에 추가하면 좋은 항목
-
-- 이메일
-- 프로필 사진
-- 연구실 및 지도교수
-- 논문과 프로젝트
-- CV PDF
-
-이 정보가 준비되면 `index.html`에 새 섹션이나 링크를 추가할 수 있습니다.
+국적, 이메일, 전화번호, 웹사이트가 한 줄에 들어가지 않으면 국적은 이름 바로 아래 별도 줄로 두고, 그다음 줄에 연락처와 웹사이트를 배치하세요.
