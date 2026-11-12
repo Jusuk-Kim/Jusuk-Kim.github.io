@@ -145,7 +145,10 @@ h1 span { color: var(--accent); }
 }
 .photo-figure figcaption { margin-top: 10px; font-size: 12px; color: var(--muted); }
 .activity-list li { grid-template-columns: 150px minmax(0, 1fr); }
-.hobby-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.activity-photo { margin: 14px 0 4px; max-width: 420px; }
+.activity-photo img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); background: var(--soft); }
+.activity-photo figcaption { margin-top: 8px; font-size: 12px; color: var(--muted); }
+.hobby-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .hobby-card { margin: 0; }
 .hobby-card img { aspect-ratio: 4 / 5; object-fit: cover; }
 .hobby-card figcaption { margin-top: 11px; font-size: 13px; font-weight: 600; }
@@ -209,8 +212,6 @@ h1 span { color: var(--accent); }
   .awards-list li { grid-template-columns: 75px minmax(0, 1fr); gap: 15px; }
   .activity-list li { grid-template-columns: 110px minmax(0, 1fr); }
   .hobby-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-  .hobby-card-last { grid-column: 1 / -1; }
-  .hobby-card-last img { aspect-ratio: 16 / 10; object-position: 50% 78%; }
   .hero-portrait { max-width: 340px; }
   .project-media { grid-template-columns: minmax(0, 1fr); max-width: 420px; }
   .media-frame img { height: auto; }
@@ -240,7 +241,7 @@ h1 span { color: var(--accent); }
   .section-split { gap: 24px; }
   .affiliation-card, .contact-section { background: white; color: var(--ink); border: 1px solid var(--line); }
   .affiliation-card p, .affiliation-card a, .affiliation-details dt, .contact-section p, .contact-section a { color: var(--ink); }
-  .project-card, .experience-entry, .education-entry, .teaching-entry, .awards-list li, .photo-figure, .hobby-card, .media-card { break-inside: avoid; }
+  .project-card, .experience-entry, .education-entry, .teaching-entry, .awards-list li, .photo-figure, .hobby-card, .media-card, .activity-photo { break-inside: avoid; }
   .translation { position: static; opacity: 1; background: white; }
   .translation p, .translation .translation-title { color: var(--ink); }
   .translate-hint { display: none; }
