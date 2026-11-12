@@ -1,43 +1,5 @@
-# Edward Jusuk Kim — GitHub Pages website update
+# jusuk-kim.github.io
 
-CV를 바탕으로 기존 HTML을 확장한 정적 웹사이트입니다. 별도의 빌드나 JavaScript 설치가 필요 없습니다.
+Source for the personal website of Edward Jusuk Kim: https://jusuk-kim.github.io/
 
-## 적용 방법
-
-1. 기존 저장소의 `index.html`을 이 폴더의 `index.html`로 교체합니다.
-2. 기존 `assets/css/style.css`를 같은 경로의 파일로 교체합니다. HTML과 CSS를 함께 적용하세요.
-3. 기존 GitHub Pages 배포 방식으로 커밋·배포합니다. 기존 저장소의 다른 파일이나 배포 설정은 삭제하지 않습니다.
-
-배포 전에 `index.html`을 브라우저에서 열어 바로 확인할 수 있습니다. `assets` 폴더를 같은 위치에 두세요. README는 적용 안내이므로 사이트에 올리지 않아도 됩니다.
-
-이 파일은 GitHub 저장소에 직접 반영되거나 배포된 상태가 아닙니다.
-
-## 반영 내용
-
-- NXC Lab 소속, 지도교수, 연구 관심사와 연구 경험
-- CUDA VAE 최적화 및 Warmer-Go-Round 프로젝트
-- 학부·석사 학력, 과목 목록, TA 및 튜터 경험
-- Dean's List, 장학금, 대회·논문 수상
-- 이메일과 GitHub 연락처
-- 기존 남색·파란색을 바탕으로 격자 배경과 큰 여백을 줄인 디자인
-- 모바일 레이아웃, 키보드 포커스, 본문 바로가기, 모션 감소 설정
-
-공개 연구 소개는 일반적인 연구 주제와 수행 내용으로 작성했습니다. 제출 논문의 제목, 시스템명, 투고 학회 및 심사 상태는 포함하지 않았습니다.
-
-## 확인할 정보
-
-- 실제 개인 사이트 주소는 확인하지 못했습니다. 페이지는 상대 경로를 사용하므로 GitHub Pages의 사용자 사이트와 프로젝트 사이트에서 모두 사용할 수 있습니다.
-- 학부 학위 날짜와 장학금 명칭은 제공한 CV를 따랐습니다. 학위 수여일이 2024년 12월과 다르다면 Education에서 변경하세요.
-- GitHub 프로필 링크는 사용자가 제공한 `https://github.com/Jusuk-Kim`을 사용합니다.
-- HTML 구조, 페이지 내 링크 및 로컬 파일 경로를 검사했습니다. 이 환경에서는 브라우저의 실제 화면과 외부 링크 연결 여부를 확인하지 못했습니다.
-- 다운로드할 CV 파일은 포함하지 않았습니다. 공개할 PDF를 준비한 후 별도로 링크를 추가할 수 있습니다.
-
-## CV에 개인 사이트 링크 추가
-
-개인 사이트 링크는 CV 헤더의 이메일 옆에 넣는 것을 권장합니다. 실제 주소로 바꿔 사용하세요.
-
-```latex
-\mbox{\hrefWithoutArrow{https://YOUR-SITE-URL/}{Website}}%
-```
-
-국적, 이메일, 전화번호, 웹사이트가 한 줄에 들어가지 않으면 국적은 이름 바로 아래 별도 줄로 두고, 그다음 줄에 연락처와 웹사이트를 배치하세요.
+A static site with no build step: `index.html`, `assets/css/style.css`, and images in `assets/img/`.
