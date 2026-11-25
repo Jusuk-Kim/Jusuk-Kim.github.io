@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Edward Jusuk Kim | Network and Computing Systems</title>
-    <meta name="description" content="Edward Jusuk Kim is a second-year M.S. student in Electrical and Computer Engineering at Seoul National University, working on network and computing systems for latency-critical, visual applications in NXC Lab." />
+    <title>Edward Jusuk Kim | Real-Time Networked Systems</title>
+    <meta name="description" content="Edward Jusuk Kim is a second-year M.S. student in Electrical and Computer Engineering at Seoul National University, working on real-time networked systems for human and machine perception in NXC Lab." />
     <meta name="theme-color" content="#111827" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Edward Jusuk Kim" />
-    <meta property="og:title" content="Edward Jusuk Kim | Network and Computing Systems" />
-    <meta property="og:description" content="Second-year M.S. student in Electrical and Computer Engineering at Seoul National University, working on network and computing systems for real-time, latency-critical applications." />
+    <meta property="og:title" content="Edward Jusuk Kim | Real-Time Networked Systems" />
+    <meta property="og:description" content="Second-year M.S. student in Electrical and Computer Engineering at Seoul National University, working on real-time networked systems for human and machine perception." />
     <meta property="og:url" content="https://jusuk-kim.github.io/" />
     <meta property="og:image" content="https://jusuk-kim.github.io/assets/img/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -42,7 +42,7 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
           <h1 id="hero-title">Edward<br /><span>Jusuk Kim</span></h1>
-          <p class="hero-summary">I build network and computing systems for real-time, latency-critical applications.</p>
+          <p class="hero-summary">I build real-time networked systems for human and machine perception.</p>
           <p class="hero-description">Second-year M.S. student in Electrical and Computer Engineering at Seoul National University.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↓</span></a>
@@ -72,18 +72,18 @@
         <div class="section-content about-copy">
           <p class="lead">I am a second-year M.S. student in <a href="https://nxc.snu.ac.kr/" target="_blank" rel="noopener noreferrer">NXC Lab</a> at Seoul National University, advised by Prof. Kyunghan Lee.</p>
           <p>Before my master’s, I earned a B.S. at Seoul National University with a double major in Rural Systems Engineering and Electrical and Computer Engineering.</p>
-          <p>My interests are in network and computing systems: how network and compute resources should be designed and coordinated so that latency-critical applications stay responsive. I am especially drawn to systems that deliver or process visual data such as video, images, and 3D content, whether the consumer is a person or a machine such as a vision model or a robot.</p>
-          <p>My current research is on live volumetric streaming, and my work spans experimental testbeds, end-to-end streaming pipelines, neural video representations, and GPU optimization.</p>
+          <p>My research interests lie in real-time networked systems for both human and machine perception in resource-constrained environments. Network streams are increasingly received by AI models and autonomous systems, whose real-time visual data needs differ from those of human viewers.</p>
+          <p>My master’s research is on live volumetric streaming, where I designed FugaStream, a system that pipelines 3D reconstruction across delayed camera views. I also collaborate with Prof. Carlee Joe-Wong’s group at Carnegie Mellon University on measuring how much video data contributes to training vision models.</p>
           <ul class="skill-tags" aria-label="Selected technical skills"><li>C / C++</li><li>Python</li><li>MATLAB</li><li>Verilog</li><li>Java</li><li>PyTorch</li><li>CUDA</li><li>WebRTC</li><li>Draco</li><li>Linux (tc/netem)</li><li>Git</li><li>NVIDIA Jetson</li></ul>
         </div>
       </section>
 
       <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-heading section-heading-row"><div><p class="section-number" aria-hidden="true">02</p><h2 id="research-title">Research</h2></div><p class="section-note">From networks and compute<br />to real-time applications.</p></div>
+        <div class="section-heading section-heading-row"><div><p class="section-number" aria-hidden="true">02</p><h2 id="research-title">Research</h2></div><p class="section-note">Streams for people,<br />models, and robots.</p></div>
         <div class="research-grid" aria-label="Research interests">
-          <article class="research-card"><p class="research-index" aria-hidden="true">A</p><h3>Networked systems</h3><p>Network protocols and resource management, including congestion and uplink contention across wireless, edge, and cloud.</p></article>
-          <article class="research-card"><p class="research-index" aria-hidden="true">B</p><h3>Real-time, latency-critical systems</h3><p>End-to-end designs that balance latency against quality for interactive and time-sensitive applications.</p></article>
-          <article class="research-card"><p class="research-index" aria-hidden="true">C</p><h3>Systems for visual data and AI</h3><p>Streaming, codecs, and edge–cloud computing for video, images, and 3D content used by people, ML models, and robots.</p></article>
+          <article class="research-card"><p class="research-index" aria-hidden="true">A</p><h3>Deadline-aware transport</h3><p>Transport and scheduling for synchronized sources that contend for a shared link, aware of which data belong together and when each piece stops being useful.</p></article>
+          <article class="research-card"><p class="research-index" aria-hidden="true">B</p><h3>Machine-centric streaming</h3><p>Streaming for AI models and robots, where quality means task accuracy and the system delivers first what the task needs.</p></article>
+          <article class="research-card"><p class="research-index" aria-hidden="true">C</p><h3>Network–compute co-design</h3><p>Deciding jointly what to transmit and where to process it, with neural codecs and models split across device, edge, and cloud under one latency budget.</p></article>
         </div>
         <h3 class="subsection-title">Publications</h3>
         <p class="manuscript"><a href="https://arxiv.org/abs/2611.32732">FugaStream: Pipelined Live Volumetric Streaming towards Full Exploitation of Multi-views</a><br /><span><strong>Edward Jusuk Kim</strong>, Huijeong Choe, Minjae Lee, Chanjeong Park, Kyunghan Lee</span><br /><em>arXiv preprint, 2026.</em></p>
@@ -91,11 +91,15 @@
         <div class="experience-list">
           <article class="experience-entry">
             <div class="entry-meta"><p class="entry-date">Mar 2025 – Present</p><p class="entry-place">NXC Lab · SNU</p></div>
-            <div class="entry-body"><p class="entry-role">Graduate Student Researcher</p><h4>Live volumetric streaming</h4><p>Investigating latency–quality trade-offs in live volumetric streaming under network and processing variability. Built a synchronized eight-camera RGB-D testbed with per-camera NVIDIA Jetson nodes and hardware-synchronized capture. Implemented the end-to-end pipeline from capture to rendering: WebRTC-based multi-camera ingest, GPU-based volumetric fusion, a UDP transport with pacing and NACK-based retransmission, and rendering on an NVIDIA Jetson client.</p></div>
+            <div class="entry-body"><p class="entry-role">Graduate Student Researcher · Metaverse Team</p><h4>Live volumetric streaming</h4><p>Built an eight-camera RGB-D end-to-end testbed from capture to rendering (WebRTC, CUDA-based fusion, UDP transport, and rendering on an NVIDIA Jetson) to study latency–quality trade-offs in live volumetric streaming under dynamic network and processing conditions. Led a four-student team as first author of <a href="https://arxiv.org/abs/2611.32732">FugaStream</a> and wrote the full paper, now posted on arXiv.</p></div>
+          </article>
+          <article class="experience-entry">
+            <div class="entry-meta"><p class="entry-date">Jun 2026 – Present</p><p class="entry-place">LIONS Group · CMU (remote)</p></div>
+            <div class="entry-body"><p class="entry-role">Research Collaborator · Prof. Carlee Joe-Wong</p><h4>Video data valuation</h4><p>Developing, as part of a joint CMU–SNU team, a testbench that measures how much video data contributes to training vision models. Set up SAM 3 for text-prompted segmentation and video object tracking to pseudo-label datasets without ground truth, and a DINOv3 feature-extraction and linear-probing pipeline with kNN, linear, and MLP heads.</p></div>
           </article>
           <article class="experience-entry">
             <div class="entry-meta"><p class="entry-date">Dec 2023 – Feb 2025</p><p class="entry-place">NXC Lab · SNU</p></div>
-            <div class="entry-body"><p class="entry-role">Undergraduate Research Intern</p><h4>Neural representations for real-time video</h4><p>Reviewed recent research on real-time communication systems and neural codecs. Designed, trained, and analyzed a VQ-GAN-based tokenizer and a ViViT-based frame reconstruction model for error recovery in real-time video conferencing.</p></div>
+            <div class="entry-body"><p class="entry-role">Undergraduate Research Intern · Network and Metaverse Team</p><h4>Neural representations for real-time video</h4><p>Reviewed recent research on real-time communication systems and neural codecs. Designed, trained, and analyzed a VQ-GAN-based tokenizer and a ViViT-based frame reconstruction model for error recovery in real-time video conferencing.</p></div>
           </article>
           <article class="experience-entry">
             <div class="entry-meta"><p class="entry-date">Jan – Aug 2023</p><p class="entry-place">A3E Lab · SNU</p></div>
@@ -109,7 +113,7 @@
         <div class="experience-list project-list">
           <article class="experience-entry">
             <div class="entry-meta"><p class="entry-date">Mar – Jun 2026</p><p class="entry-place">Course research project · Team lead</p></div>
-            <div class="entry-body"><p class="entry-role">Machine Learning for Visual Understanding · SNU</p><h4>CoDGS</h4><p class="entry-text">Proposed and led a three-person project on reducing the per-frame update cost of 3D Gaussian Splatting for free-viewpoint video. Designed and implemented an algorithm that reuses motion information from a video codec to guide scene updates, and evaluated processing time against rendering quality with baseline comparisons and component ablations.</p>
+            <div class="entry-body"><p class="entry-role">Machine Learning for Visual Understanding · Prof. Joonseok Lee · SNU</p><h4>CoDGS</h4><p class="entry-text">Proposed and led a three-person project on reducing the per-frame update cost of 3D Gaussian Splatting (3DGS) for free-viewpoint video. Designed and implemented a training-free method that reuses video codec motion vectors to update Gaussians, enabling live 3DGS streaming at some cost in fine detail. The proposal was among the top third selected as team projects.</p>
               <ul class="skill-tags" aria-label="CoDGS technologies"><li>3D Gaussian Splatting</li><li>Video codecs</li><li>Free-viewpoint video</li></ul></div>
           </article>
           <article class="experience-entry">
@@ -149,14 +153,14 @@
         <div class="section-content">
           <article class="education-entry"><div><p class="entry-date">Mar 2025 – Present</p><h3>Seoul National University</h3><p>M.S. in Electrical and Computer Engineering</p><p class="entry-detail">Advisor: Prof. Kyunghan Lee · GPA: 4.25/4.30</p></div></article>
           <article class="education-entry"><div><p class="entry-date">Mar 2018 – Feb 2025</p><h3>Seoul National University</h3><p>B.S. in Rural Systems Engineering and Electrical and Computer Engineering</p></div></article>
-          <div class="coursework"><h3>Selected coursework</h3><p>Machine Learning and Linear Algebra; Data Communication Networks; Understanding of Advanced Cellular Systems; Computer Architecture; Signals and Systems; Data Structures.</p></div>
+          <div class="coursework"><h3>Selected coursework</h3><p>Machine Learning and Linear Algebra, Data Communication Networks, Understanding of Advanced Cellular Systems, Computer Organization, Signals and Systems, Data Structures</p></div>
         </div>
       </section>
 
       <section class="section section-split" id="teaching" aria-labelledby="teaching-title">
         <div class="section-heading"><p class="section-number" aria-hidden="true">05</p><h2 id="teaching-title">Teaching &amp;<br />mentoring</h2></div>
         <div class="section-content">
-          <article class="teaching-entry"><p class="entry-date">Fall 2026</p><h3>Teaching Assistant, Data Communication Networks</h3><p class="entry-detail">Seoul National University</p><p>Implemented a reference HTTP server in C for a socket-programming assignment, supporting concurrent requests, video streaming, and cookie-based session management.</p></article>
+          <article class="teaching-entry"><p class="entry-date">Fall 2026</p><h3>Teaching Assistant, Introduction to Data Communication Networks</h3><p class="entry-detail">Seoul National University · Prof. Kyunghan Lee</p><p>Implemented a reference HTTP server in C for a socket-programming assignment, supporting concurrent requests, video streaming, and cookie-based session management. Built a QUIC-style video streaming course project on loss recovery with FEC and interleaving.</p></article>
           <article class="teaching-entry"><p class="entry-date">Mar – Dec 2023</p><h3>Peer Tutor</h3><p>College of Agriculture and Life Sciences, Seoul National University</p></article>
           <article class="teaching-entry"><p class="entry-date">Mar – Jun 2023</p><h3>Physics Peer Tutor</h3><p>Department of Physics and Astronomy, Seoul National University</p></article>
           <figure class="photo-figure photo-figure-end">
@@ -170,9 +174,9 @@
         <div class="section-heading"><p class="section-number" aria-hidden="true">06</p><h2 id="honors-title">Honors &amp;<br />awards</h2></div>
         <div class="section-content"><ul class="awards-list">
           <li><span class="award-year">2024</span><div><h3>Second Place</h3><p>Accelerator Programming Summer School</p></div></li>
-          <li><span class="award-year">2023</span><div><h3>Second Prize</h3><p>37th Best Essay Competition, Seoul National University</p></div></li>
+          <li><span class="award-year">2023</span><div><h3>Excellence Award</h3><p>37th Excellent Report Contest, Seoul National University</p></div></li>
           <li><span class="award-year">2023</span><div><h3>Program Director’s Award</h3><p>POLARIS SIF · Warmer-Go-Round</p></div></li>
-          <li><span class="award-year">2019, 2023</span><div><h3>Merit-based Scholarships</h3><p>Seoul National University · Spring and Fall 2019; full scholarship in Spring 2023</p></div></li>
+          <li><span class="award-year">2019, 2022, 2023</span><div><h3>Merit-based Scholarships</h3><p>Seoul National University · Spring and Fall 2019, Fall 2022, and Spring 2023 (full scholarship)</p></div></li>
           <li><span class="award-year">Spring 2019</span><div><h3>Dean’s List</h3><p>College of Agriculture and Life Sciences, Seoul National University</p></div></li>
           <li><span class="award-year">Feb 2017</span><div><h3>Outstanding Paper Award · High School Division</h3><p>KICS Winter Conference</p></div></li>
           <li><span class="award-year">2016</span><div><h3>Special Prize · Physics Division</h3><p>62nd National Science Fair, Republic of Korea</p></div></li>
@@ -186,7 +190,7 @@
             <li><span class="award-year">Sep 2025</span><div><h3>Attendee, ACM SIGCOMM 2025</h3><p>Mentoring program participant</p>
               <figure class="activity-photo"><img src="assets/img/sigcomm-2025.jpg" width="700" height="472" loading="lazy" alt="Edward Jusuk Kim seated at a round dinner table with other attendees of the ACM SIGCOMM 2025 mentoring program; the other attendees' faces are blurred." /><figcaption>At the mentoring program dinner.</figcaption></figure></div></li>
             <li><span class="award-year">Dec 2021 – Dec 2022</span><div><h3>Vice President, Department Student Council</h3><p>Seoul National University</p></div></li>
-            <li><span class="award-year">Dec 2019 – Sep 2022</span><div><h3>Actor, Drama Club</h3><p>Performed in two stage productions</p>
+            <li><span class="award-year">Sep 2018 – Sep 2022</span><div><h3>Actor, Drama Club</h3><p>Performed in two stage productions</p>
               <figure class="activity-photo"><img src="assets/img/drama-club.jpg" width="900" height="600" loading="lazy" alt="Three actors in suits on a stage seen from above; Edward Jusuk Kim stands on the right and the other two actors' faces are blurred." /><figcaption>On stage in a drama club production.</figcaption></figure></div></li>
             <li><span class="award-year">Mar 2020 – Sep 2021</span><div><h3>Military Service</h3><p>Squad Leader</p></div></li>
           </ul>
