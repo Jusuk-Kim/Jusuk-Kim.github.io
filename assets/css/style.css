@@ -78,6 +78,8 @@ h1 span { color: var(--accent); }
 .subsection-title { margin: 46px 0 7px; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
 .manuscript { margin: 14px 0 0; font-size: 15px; }
 .manuscript span, .manuscript em { color: var(--muted); }
+.manuscript a { font-weight: 600; }
+.manuscript strong { color: var(--ink); font-weight: 600; }
 .experience-entry { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 35px; padding: 28px 0; border-bottom: 1px solid var(--line); }
 .experience-entry:last-child { border-bottom: 0; padding-bottom: 0; }
 .entry-date { font-size: 12px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
